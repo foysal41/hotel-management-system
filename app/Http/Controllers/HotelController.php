@@ -19,4 +19,32 @@ class HotelController extends Controller
 
 
 
+
+
+
+
+     public function store(Request $request){
+
+        //dd($request->all());
+        $validation = $request->validate([
+            'name' => 'required',
+            'description' => 'required' , 'max:255',
+            'status' => 'required',
+            'image' => 'image|mimes:png,jpg,jpeg,gif,svg|max:2048',
+        ]);
+
+
+        if($request->hasFile('image')){
+            $fileName=$request->file('image')->store('images' , 'public'); //Photo save to public/images
+            $validation['image'] = $fileName;
+        }
+
+        //create the product
+        Hotel::create($validation);
+        return redirect()->back()->with('success' , 'Hotel Created Successfully');
+
+     }
+
+
+
 }

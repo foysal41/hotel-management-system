@@ -28,3 +28,17 @@
 
 
 */
+
+
+
+
+
+
+/*  Part 4  */
+
+
+/*
+   Go to hotel controller working with store
+----- Laravel এর ফাইল স্টোরেজের ডিফল্ট ডিরেক্টরি  অ্যাক্সেস করতে পারে না। php artisan storage:link চালালে, public/storage এর মাধ্যমে ফাইলগুলো অ্যাক্সেসযোগ্য হয়ে যায়।
+
+*/

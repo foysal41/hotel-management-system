@@ -9,7 +9,7 @@
 
         <div class="col-md-8">
             <div class="form-area">
-                <form action="" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('hotels.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <div class="col-md-6">
@@ -64,7 +64,7 @@
                         <td scope="col">{{ ++$key }}</td>
                         <td scope="col">{{ $hotel->name }}</td>
                         <td scope="col">
-                            <img src="{{ asset('storage/' . $hotel->image) }}" width="250" height="250" class="img img-responsive"/>
+                            <img src="{{ asset('storage/' . $hotel->image) }}" width="50" height="50" class="img img-responsive"/>
                         </td>
                         <td scope="col">{{ $hotel->description }}</td>
                         <td scope="col">
@@ -76,7 +76,7 @@
 
                             <form action="" method="POST" style="display: inline">
                                 @csrf
-                                <button class="btn btn-danger bnt-sm" type="submit">
+                                <button class="btn btn-danger btn-sm" type="submit">
                                     <i class="fa fa-trash" aria-hidden="true"></i> Delete
                                 </button>
                             </form>
