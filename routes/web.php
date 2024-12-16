@@ -20,6 +20,7 @@ Route::delete('deletehotel/{id}' , [HotelController::class , 'destroy']);
 // Rooms
 
 Route::post('storeroom', [RoomController::class, 'store'])->name('rooms.store');
-Route::get('allrooms' , [RoomController::class, 'index']);
-Route::put('updateroom/{id}' , [RoomController::class , 'update']);
-Route::delete('deleteroom/{id}' , [RoomController::class , 'destroy']);
+Route::get('allrooms', [RoomController::class, 'index'])->name('rooms.index');
+Route::get('editroom/{id}', [RoomController::class, 'edit'])->name('rooms.edit');
+Route::put('updateroom/{id}', [RoomController::class, 'update'])->name('rooms.update');
+Route::delete('deleteroom/{id}', [RoomController::class, 'destroy'])->name('rooms.destroy');

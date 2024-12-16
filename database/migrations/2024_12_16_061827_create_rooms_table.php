@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description');
             $table->string('image')->nullable();
-            $table->integer('qty');
+            $table->integer('qty')->nullable();
             $table->foreignId('hotel_id')->constrained()->onDelete('cascade');
             $table->boolean('status')->default(1);
             $table->timestamps();
