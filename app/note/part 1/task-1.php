@@ -42,3 +42,17 @@
 ----- Laravel এর ফাইল স্টোরেজের ডিফল্ট ডিরেক্টরি  অ্যাক্সেস করতে পারে না। php artisan storage:link চালালে, public/storage এর মাধ্যমে ফাইলগুলো অ্যাক্সেসযোগ্য হয়ে যায়।
 
 */
+
+
+/*  Part 6 */
+
+
+/*
+   1. create php artisan make:model Room -m
+   2. Goto Room migration -> 'name', 'description', 'image', 'qty', 'hotel_id', 'status' make korlam
+   3. create contorller php artisan make:controller RoomController
+  4 . go to view > hotels >index
+  5. Working with relation ship with hotel and  room model
+  
+
+*/

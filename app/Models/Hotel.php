@@ -11,5 +11,10 @@ class Hotel extends Model
     protected $primaryKey = 'id';
     protected $fillable= ['name' , 'image' , 'description' , 'status'];
 
+    public function rooms(){
+        return $this->hasMany(Hotel::class , 'hotel_id');
+    }
+
+
     use HasFactory;
 }
