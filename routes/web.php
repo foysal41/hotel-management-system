@@ -4,11 +4,22 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HotelController;
 use App\Http\Controllers\RoomController;
+use App\Http\Controllers\HomeController;
 
 
+
+
+
+/*
 Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+
+//HOME
+Route::get('/' , [HomeController::class, 'index']);
+
+
 
 
 Route::post('storehotel', [HotelController::class, 'store'])->name('hotels.store');

@@ -53,6 +53,26 @@
    3. create contorller php artisan make:controller RoomController
   4 . go to view > hotels >index
   5. Working with relation ship with hotel and  room model
-  
+
 
 */
+
+
+/*  Part 8 */
+
+
+/*
+   1. Download bootstrap ecommerce tempate https://startbootstrap.com/template/shop-homepage
+    2. Home Controller create : php artisan make:controller HomeController
+    3. Pasted bootstrap ecommerce tempalte to pbulic then boot-ecomm folder
+    4. make new view  > home.blade.php and paste all ecom index.html code inside home.blade.php
+    5. make new new route API for home
+    6. We can seperate home.blade.php to master.blade.php in root view folder
+    Ready the home ecommerce template now
+
+
+
+
+*/
+
+
